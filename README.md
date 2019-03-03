@@ -1,7 +1,7 @@
 # tap-a-tip
 
 Have you ever been sitting at your favorite Pho shop and then you realize that your brain is too full of broth to figure out how to tip?
-Well worry no more patron, using this simple tip calculator is just what you need.
+Well worry no more patron, this simple tip calculator is just what you need.
 
 # notes
 
