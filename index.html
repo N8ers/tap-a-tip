@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<head>
+    <title>tap-a-tip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <div id="container">
+        <h4 id="header">Tap-a-Tip</h4>
+        <br>
+
+        <!--  enter bill  -->
+        <div id="moveUpTarget" class="container-head containers">
+            <div class="bill-sub-header" id="sub-header">enter bill</div>
+            <form id="calculate">
+                <span>$</span>
+                <input type="number" placeholder="35.59" step="0.01" name="calculateTip" id="tipInput">
+                <br>
+                <input class="button" id="tipBtn" type="submit" value="Tip!">
+                <div class="alert" id="alert"></div>
+            </form>
+        </div>
+
+        <br>
+        <br>
+        <div id="fadeInTarget" class="seeThrough">
+
+            <!--   auto generated 'standard' tip amounts   -->
+            <div class="container-table containers">
+                <div id="sub-header">standard </div>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Tip</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>20% &#8594;</td>
+                        <td id="tipOne"></td>
+                        <td id="totalOne"></td>
+                    </tr>
+                    <tr>
+                        <td>25% &#8594;</td>
+                        <td id="tipTwo"></td>
+                        <td id="totalTwo"></td>
+                    </tr>
+                    <tr>
+                        <td>30% &#8594;</td>
+                        <td id="tipThree"></td>
+                        <td id="totalThree"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+
+            <!--   custom tip slider wheele!   -->
+            <div class="container-custom containers">
+                <div id="wheel-container"></div>
+                <div id="sub-header">custom tip</div>
+                <br>
+                <div class="row">
+
+                    <div class="tipCircle" id="tipCircleTarget">20%</div>
+
+                    <div id="custom">
+                        <div>
+                            <span>tip: $</span><u><span id="customTip">0.00</span></u>
+                            <br>
+                            <span>total: $</span><u><span id="customTipTotal">0.00</span></u>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="slidercontainer">
+                    <input type="range" min="20" max="99" value="20" class="slider" id="sliderTarget">
+                </div>
+                <p class="sliderMessage"> &#60;slide me to generate a custom tip&#62; </p>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
